@@ -228,12 +228,16 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             winnerPlayer = 2
         }
         if (!(button1.isEnabled) && !(button2.isEnabled) && !(button3.isEnabled) && !(button4.isEnabled) && !(button5.isEnabled) && !(button6.isEnabled) && !(button7.isEnabled) && !(button8.isEnabled) && !(button9.isEnabled)) {
-                winnerPlayer = 3
+            if (123 !in secondPlayer && 456 !in secondPlayer && 789 !in secondPlayer && 147 !in secondPlayer && 258 !in secondPlayer && 369 !in secondPlayer && 159 !in secondPlayer && 357 !in secondPlayer){
+            winnerPlayer = 3
+            }
         }
         
 
         if (!(button1.isEnabled) && !(button2.isEnabled) && !(button3.isEnabled) && !(button4.isEnabled) && !(button5.isEnabled) && !(button6.isEnabled) && !(button7.isEnabled) && !(button8.isEnabled) && !(button9.isEnabled)) {
-                winnerPlayer = 3
+            if (123 !in secondPlayer && 456 !in secondPlayer && 789 !in secondPlayer && 147 !in secondPlayer && 258 !in secondPlayer && 369 !in secondPlayer && 159 !in secondPlayer && 357 !in secondPlayer){
+            winnerPlayer = 3
+            }
         }
         
 
