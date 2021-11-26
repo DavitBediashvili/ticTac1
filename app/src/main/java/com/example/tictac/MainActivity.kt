@@ -100,7 +100,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
 
 
-    private fun refreshBoard_pointAdd(clickedView: Button){ //დაფას ასუფთავებს და შემდეგ უმატებს ქულას ვინც მანამდე მოიგო
+    private fun refreshBoard_pointAdd(clickedView: Button){ //დაფას ასუფთავებს 
         if(clickedView == buttonA){
             button1.text = ""
             button1.setBackgroundColor(Color.BLUE)
@@ -143,9 +143,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             firstPlayer.clear()
             secondPlayer.clear()
 
-            Fpoints.text = points1.toString()
-            Spoints.text = points2.toString()
-
+            
 
 
 
@@ -245,6 +243,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             Toast.makeText(this,"FIRST PLAYER WON", Toast.LENGTH_SHORT).show()
             disable()
             points1 += 1
+            Fpoints.text = points1.toString()
+            Spoints.text = points2.toString()
+
 
 
 
@@ -253,6 +254,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             Toast.makeText(this,"SECOND PLAYER WON", Toast.LENGTH_SHORT).show()
             disable()
             points2 += 1
+            Fpoints.text = points1.toString()
+            Spoints.text = points2.toString()
+
 
 
         }
